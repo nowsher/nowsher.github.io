@@ -37,3 +37,19 @@ body {
     max-height:90%;
 }
 
+a:link{
+    color: white;
+    font-style: italic;
+    text-decoration: none;   
+}
+
+a:visited{
+    color: yellow;
+}
+a:active{
+    color: royalblue;
+}
+a:hover{
+  color: red;
+  text-decoration: underline;
+}

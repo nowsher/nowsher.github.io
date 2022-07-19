@@ -1,0 +1,53 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("./public/silverware.jpg");
+}
+
+#mainDiv{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#mainDiv>h1{
+    background-color: #F0F0F0;
+    color: #CCC34B;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    letter-spacing: 0.25em;
+
+}
+
+#mainDiv p{
+    line-height: 5px;
+    font-weight: bold;
+    color: #8d8a67;
+
+}
+
+hr{
+    border: 1px solid #8d8a67;
+}
+
+#mainDiv>h2{
+    background-color: #F0F0F0;
+    color: #CCC34B;
+    text-align: left;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-weight: lighter;
+    letter-spacing: 0.10em;
+}
+
+.dir{
+    color: #8d8a67;
+
+}
+
+#quotes>blockquote{
+    background-color: #ddd671;
+}
+
+#lastSection div p{
+   text-align: right;
+}
