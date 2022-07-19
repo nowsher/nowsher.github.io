@@ -1,0 +1,39 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.titles {
+    color: lightblue;
+}
+
+.titles-size {
+    font-size: x-large;
+}
+
+.highlight-words {
+    font-weight: bold;
+    color:  yellow;
+}
+
+.imdb{
+    font-weight: bold;
+    color:  burlywood;
+}
+
+.sad-happy{
+    font-weight: bold;
+    /* color:  yellowgreen; */
+    text-align: center;
+}
+
+.images{
+    margin: 12px;
+    height: 400px;
+}
+
+.image{
+    max-width:90%;
+    max-height:90%;
+}
+
