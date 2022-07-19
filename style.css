@@ -1,0 +1,16 @@
+html,
+body {
+    height: 100%;
+}
+
+.rowX {
+    display: flex;
+}
+
+/* Create two equal columns*/
+.columnY {
+    /*flex: 50%;*/
+    padding: 10px;
+    height: 550px;
+    /*border: solid 0.5px rgb(150, 150, 165);*/
+}
