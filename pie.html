@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- First 4 Extra features were implemented. -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe page</title>
     <link rel="stylesheet" href="recipe.css">
-    <link rel="icon" type= "image/gif" href="./public/pie_icon.gif">
+    <link rel="icon" type="image/gif" href="./public/pie_icon.gif">
 </head>
 
 <body>
     <div id="mainDiv">
         <h1>Grandma's Lemon Meringue Pie</h1>
         <section>
-            <img src="https://www.inspiredtaste.net/wp-content/uploads/2016/07/Pie-Crust-Recipe-1-1200.jpg" alt=""
-                width="180px" height="180px">
+            <img src="./public/pie.jpg" alt="" width="180px" height="180px">
             <p>One 9-inch pie</p>
             <p>30 Min - Prep time</p>
             <p>10 Min - Cook time</p>
@@ -26,18 +25,18 @@
 
         <h2>INGREDIENTS</h2>
         <section>
-            <ul style="list-style-image: url('./img/pie_icon.gif');">
+            <ul style="list-style-image: url('./public/pie_icon.gif');">                    
                 <li> 1 cup white sugar</li>
-                <li>2 <abbr title="about the food">tbsp</abbr> all-purpose flour</li>
-                <li>3 <abbr title="about the food">tbsp</abbr> cornstarch</li>
-                <li>1/4 <abbr title="about the food">tsp</abbr> salt</li>
+                <li>2 <abbr title="tablespoons">tbsp</abbr> all-purpose flour</li>
+                <li>3 <abbr title="tablespoons">tbsp</abbr> cornstarch</li>
+                <li>1/4 <abbr title="teaspoon">tsp</abbr> salt</li>
                 <li>1 1/2 cups water</li>
                 <li>2 lemons, juiced and zested</li>
-                <li>2 <abbr title="about the food">tbsp</abbr> butter</li>
+                <li>2 <abbr title="tablespoons">tbsp</abbr> butter</li>
                 <li>4 egg yolks, beaten</li>
                 <li>1 (9 inch) pie crust, baked</li>
                 <li>4 egg whites</li>
-                <li>6 <abbr title="about the food">tbsp</abbr> white sugar</li>
+                <li>6 <abbr title="tablespoons">tbsp</abbr> white sugar</li>
             </ul>
             <hr>
         </section>
@@ -48,7 +47,7 @@
 
                 <li><b>Preheat Oven:</b> Preheat oven to 350 degrees F (175 degrees C).</li>
                 <li><b>Make Lemon Filling:</b> In a medium saucepan ...
-                    <ul style="list-style-image: url('./img/pie_icon.gif');">
+                    <ul style="list-style-image: url('./public/pie_icon.gif');">                    
                         <li>Whisk together 1 cup sugar, flour, cornstarch, and salt.</li>
                         <li>Stir in water, lemon juice and lemon zest.</li>
                         <li>Cook over medium-high heat, stirring frequently, until mixture comes to a boil.</li>
@@ -61,7 +60,7 @@
                     </ul>
                 </li>
                 <li> <b>Make Meringue:</b> In a large glass or metal bowl ...
-                    <ul style="list-style-image: url('./img/pie_icon.gif');">
+                    <ul style="list-style-image: url('./public/pie_icon.gif');">
                         <li>Whip egg whites until foamy.</li>
                         <li>Add sugar gradually, and continue to whip until stiff peaks form.</li>
                         <li>Spread meringue over pie, sealing the edges at the crust.</li>
@@ -72,7 +71,8 @@
             <span>
                 This is our favorite recipe here at Granny's Pies. It has been enjoyed by pie fans
                 for many years. It's Granny's favorite! We hope you'll find that this recipe is
-                delicious and also easy to follow; it's a piece of cake pie!
+                delicious and also easy to follow; it's a piece of <span
+                    style="text-decoration: line-through;">cake</span> pie!
             </span>
             <hr>
         </section>
@@ -104,27 +104,38 @@
 
         <h2>LINKS</h2>
         <section id="lastSection">
-            <p><a href="">Search for other lemon meringue pie recipes</a></p>
-            <p><a href="">Home</a></p>
+            <p><a href="http://www.google.com/search?q=lemon+meringue+pie+recipe&start=10">Search for other lemon meringue pie recipes</a></p>
+            <p><a href="./index.html">Home</a></p>
 
             <!-- Validate  -->
-            <div>
-                <div style="margin-top: 100px;">
+            <div class="validation">
+                <span>
                     <a href="http://validator.w3.org/check?uri=https://nowsher.github.io/recipe">
                         <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator" />
                     </a>
-                </div>
-
-                <div>
+                </span>
+                <span>
                     <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://nowsher.github.io/recipe">
                         <img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="css validator" />
                     </a>
+                </span>
+            </div>
+            <div class="copyright" style="display: table; display: flex;">
+                <div style="width: 70%;">
+
+                </div>                
+                <div>                    
+                    <div style="display: table; display: flex;">
+                        <div style="width: 100%;">Copyright © 2012 Granny's Pies</div><div style="text-align: end;">|</div>
+                    </div>                    
+                    <div style="display: table; display: flex;">
+                        <div style="width: 100%;">A Granny's Pies Production</div><div style="text-align: end;">|</div>
+                    </div>                    
+                    <div style="display: table; display: flex;">
+                        <div style="width: 100%;">All rights reserved</div><div style="text-align: end;">|</div>
+                    </div>                                        
                 </div>
             </div>
-
-            <p>Copyright Â© 2012 Granny's Pies |</p>
-            <p>A Granny's Pies Production |</p>
-            <p>All rights reserved |</p>
     </div>
 
     </section>

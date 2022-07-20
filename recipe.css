@@ -1,16 +1,25 @@
-body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body {
+    font-family: Georgia, Garamond, serif;
+    
     background-image: url("./public/silverware.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+    color: #404040;
+    font-size: 11pt;
 }
 
-#mainDiv{
-    margin-left: 20%;
-    margin-right: 20%;
+#mainDiv {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-#mainDiv>h1{
+#mainDiv>h1 {
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    font-size: 22pt;
+    font-weight: bold;
     background-color: #F0F0F0;
-    color: #CCC34B;
+    color: #A4A400;
     text-align: center;
     margin-bottom: 10px;
     text-decoration: underline;
@@ -18,36 +27,57 @@ body{
 
 }
 
-#mainDiv p{
+#mainDiv p {
     line-height: 5px;
     font-weight: bold;
     color: #8d8a67;
-
 }
 
-hr{
+hr {
     border: 1px solid #8d8a67;
 }
 
-#mainDiv>h2{
+#mainDiv>h2 {
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
     background-color: #F0F0F0;
-    color: #CCC34B;
+    color: #A4A400;
     text-align: left;
     margin-bottom: 10px;
     text-decoration: underline;
-    font-weight: lighter;
+    font-size: 18pt;
     letter-spacing: 0.10em;
 }
 
-.dir{
+.dir {
     color: #8d8a67;
 
 }
 
-#quotes>blockquote{
+#quotes>blockquote {
     background-color: #ddd671;
 }
 
-#lastSection div p{
-   text-align: right;
+/* #lastSection div p {
+    text-align: right;
+} */
+
+a:link {
+    color: #A4A400;
+}
+
+a:visited {
+    color: #A4A400;
+}
+
+.copyright {    
+    font-family: 'Courier New', Courier, monospace;
+    /* line-height: 0px;*/
+    font-weight: bold;
+    color: #8d8a67; 
+}
+
+.validation {
+    text-align: end;
+    margin-top: 100px; 
+    margin-bottom: 20px;   
 }
