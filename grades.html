@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Grades Exercise</title>
+	<link rel="stylesheet" type="text/css" href="grades.css">
+</head>
+
+<body>
+	<div id="mainDiv">
+
+		<form action="https://mumstudents.org/params.php">
+			<h1>Retrieve your grade</h1>
+			<div class="grade-fields">
+				<div>Name:</div>
+				<input type="text" name="name" value="" placeholder="Your name">
+			</div>
+			<div class="grade-fields">
+				<div>Student ID:</div>
+				<input type="text" name="id" value="" placeholder="Your ID">
+			</div>
+
+			<div class="grade-fields">
+				<div>Select assignment:</div>
+				<select name="assignment">
+					<option value="home">Home page</option>
+					<option value="about">About me</option>
+					<option value="recipe" selected>Recipe</option>
+					<option value="movie">Movie preview</option>
+				</select>
+			</div>
+
+			<div class="grade-fields">
+				<fieldset id="entry-options">
+					<legend>Choose your entry:</legend>					
+					<label><input type="radio" name="entry" value="052022"> November 2021</label>
+					<label><input type="radio" name="entry" value="052022"> May 2022</label>
+					<label><input type="radio" name="entry" value="012022"> January 2022</label>
+				</fieldset>
+			</div>
+
+			<div class="grade-fields">
+				<div>
+					<input type="checkbox" name="confirm1" value="confirm">
+					I confirm that, I am a current student and checking my own grades.
+				</div>
+
+			</div>
+
+			<div class="grade-fields">
+				<input type="submit" value="Get Grade!">
+				<input type="reset" value="Reset">
+			</div>
+		</form>
+
+		<div>
+			<div style="margin-top: 100px;">
+				<a href="http://validator.w3.org/check?uri=https://nowsher.github.io/grades">
+					<img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator" />
+				</a>
+			</div>
+	
+			<div>
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://nowsher.github.io/grades">
+					<img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="css validator" />
+				</a>
+			</div>
+		</div>
+
+	</div>	
+</body>
+
+</html>

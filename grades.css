@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1;
+}
+
+#mainDiv {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.grade-fields{
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#entry-options label{
+    margin: 10px;
+}
+
+input[type="text"] {
+    background-color: lightgrey;
+    border: none;
+    border-bottom: 2px solid maroon;
+}
+
+
+input[type="submit"] {
+    background-color: lightblue;
+}
+
+input[type="reset"] {
+    margin-left: 20px;    
+}
