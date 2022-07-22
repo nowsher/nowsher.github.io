@@ -1,0 +1,103 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1;
+}
+
+#mainDiv {
+    margin-left: 15%;
+    margin-right: 25%;
+}
+
+.fields {
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#entry-options {
+    border-color: rgb(225, 225, 255);
+    border-radius: 5px;
+    background-color: rgb(225, 225, 255);
+}
+
+/* #entry-options label {
+    margin: 10px;
+} */
+
+/* input[type="text"] {
+    background-color: lightgrey;
+    border: none;
+    border-bottom: 2px solid maroon;
+} */
+
+input[type="submit"] {
+    background-color: coral;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+#logo {
+    width: 150px;
+}
+
+legend {
+    border: 1px solid;
+    background: white;
+}
+
+legend,
+#entry-options {
+    padding: 2px;
+    box-shadow: 2px 2px #888888;
+}
+
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    /* border: 1px solid red;
+    background-color: yellow; */
+    height: 40px;
+}
+
+.column {
+    margin: 5px;
+    /* border: 1px solid blue; */
+}
+
+.column-left {
+    /* background-color: orange; */
+    width: 30%;
+}
+
+.column-right {
+    /* background-color: royalblue; */
+    width: 70%;
+}
+
+.field-text {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.radio-options{
+ margin-right: 10px;
+}
