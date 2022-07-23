@@ -1,0 +1,63 @@
+1. What is the difference between the following 2 statements?
+setTimeout(booyah, 2000);
+setTimeout(booyah(), 2000);
+[Answers]
+setTimeout(booyah, 2000); // here "boolah" is will be called after 2000 ms.
+setTimeout(booyah(), 2000); // here boolah will be called immediately the code executes.
+
+
+
+
+2. What do the following 2 alerts display (answer without running the code)?
+var myfunc = function(a, x) {
+ return a * x;
+};
+var x = myfunc(2, 3);
+var y = myfunc;
+alert(x);
+alert(y(2,3));
+
+Answers:
+6
+6
+
+
+
+
+3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+says “BOOYAH!”
+setTimeout(booyah1, 2000);
+setTimeout(booyah2(), 2000);
+
+[Answer]
+    function booyah1() {
+        alert("BOOYAH!");
+    }
+
+    function booyah2() {
+        setTimeout(function () {
+            alert("BOOYAH!");
+        }, 2000);
+    }
+
+
+
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?
+        
+->What is "Unobtrusive Javascript"?: 
+Writing the javascripts in a separate file, is called Unobtrusive Javascript. 
+
+->What is the practical application of Unobtrusive Javascript (and the reasons for using it)?
+No Javascript code exist in the html page. No function call inside Tags like 'button' tag, such as onclick etc. Example below.
+---in HTML file--
+<button id="ok">OK</button>
+---In JS file---
+var okButton = document.getElementById("ok");
+okButton.onclick = okayClick;
+
+
+The main reason is to separate different types of scripts or codes in different files. The concept of keeping those separate helps to have a application structure with better manageability.
+- Content (html)
+- Behavior (js)    
+- Presentation (css)
