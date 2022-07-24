@@ -1,9 +1,10 @@
 1. What is the difference between the following 2 statements?
 setTimeout(booyah, 2000);
 setTimeout(booyah(), 2000);
-[Answers]
-setTimeout(booyah, 2000); // here "boolah" is will be called after 2000 ms.
-setTimeout(booyah(), 2000); // here boolah will be called immediately the code executes.
+
+Answers:-
+setTimeout(booyah, 2000); // Here "boolah" will be called after 2000 ms.
+setTimeout(booyah(), 2000); // Here boolah will be called immediately the code executes.
 
 
 
@@ -17,7 +18,7 @@ var y = myfunc;
 alert(x);
 alert(y(2,3));
 
-Answers:
+Answers:-
 6
 6
 
@@ -29,7 +30,7 @@ says “BOOYAH!”
 setTimeout(booyah1, 2000);
 setTimeout(booyah2(), 2000);
 
-[Answer]
+Answer:-
     function booyah1() {
         alert("BOOYAH!");
     }
@@ -42,9 +43,11 @@ setTimeout(booyah2(), 2000);
 
 
 
+
 4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
 for using it)?
-        
+
+Answers:-
 ->What is "Unobtrusive Javascript"?: 
 Writing the javascripts in a separate file, is called Unobtrusive Javascript. 
 
