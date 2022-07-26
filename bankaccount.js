@@ -29,8 +29,8 @@ class Account {
         Account.accountInfoList[Account.accountInfoList.length] = this;
         // Account.#accountInfoList1[Account.#accountInfoList1.length] = this;
 
-        document.getElementById("name").value="";
-        document.getElementById("deposit").value="";
+        document.getElementById("name").value = "";
+        document.getElementById("deposit").value = "";
     }
 
     getName() {
@@ -106,21 +106,27 @@ function save() {
     for (let index = 0; index < Account.accountInfoList.length; index++) {
         const element = Account.accountInfoList[index];
         if (element.getName() == nameValue) {
+            let changed = false;
             if (operationType == "Deposit amount") {
                 element.updateDeposit(amount);
+                changed = true;
             }
             else
                 if (operationType == "Debit amount") {
                     if (parseInt(element.getDeposit()) > amount) {
                         element.updateDeposit(-amount);
+                        changed = true;
                     }
                     else {
                         alert("Overdraft not allowed.");
                     }
                 }
-            showAccountList();
-            closeWindow();
-            document.getElementById("amount").value = "";
+                
+            if (changed) {
+                showAccountList();
+                closeWindow();
+                document.getElementById("amount").value = "";
+            }
             break;
         }
     }
