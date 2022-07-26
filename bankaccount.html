@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Nowsher's' site</title>
+    <link rel="stylesheet" type="text/css" href="bankaccount.css">
+    <script src="bankaccount.js"></script>
+</head>
+
+<body>
+    <div style="height: 100%;">
+
+        <div class="main-container">
+            <div class="column column-left">
+                <label for="name">Account Name</label>
+            </div>
+            <!-- Right column -->
+            <div class="column column-right">
+                <input type="text" name="name" id="name"><br><br>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="column column-left">
+                <label for="deposit">Deposit</label>
+            </div>
+            <!-- Right column -->
+            <div class="column column-right">
+                <input type="number" name="deposit" id="deposit"> <br> <br>
+            </div>
+        </div>
+
+        <div>
+            <button id="createAcc" onclick="createAccount()">Create new acount</button>
+            <br>
+            <br>
+            <textarea name="textArea" id="textArea" cols="50" rows="10"></textarea>
+        </div>
+
+        <!-- POP window -->
+        <div style="margin-top: 30px;">
+            <button id="btnDeposit" onclick="depositClick()">Deposit</button>
+            <button id="btnDebit" onclick="debitClick()">Debit</button>
+
+            <div id="overlay">
+                <div id="pop-window">
+                    <h2 id="operationType">Deposit amount</h2>
+                    <div>Select Account:</div>
+                    <div style="margin-top: 5px; margin-bottom: 10px;">
+                        <select name="accountsList" id="accountsList" style="width: 170px;" onchange="changeValue()">
+                            <!-- <option value="1">111</option> -->
+                        </select>    
+                    </div>
+                    <div>Amount:</div>
+                    <input type="number" name="amount" id="amount" oninput="changeValue()">
+                    
+                    <div style="height: 35%;"></div>
+                    <div style="margin-top: 10px;">
+                        <button id="save" onclick="save()" disabled>Save/Submit</button>                        
+                        <button id="cancel" style="margin: 5px;" onclick="closeWindow()">Cancel</button>    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div>
+            <div style="margin-top: 100px;">
+                <a href="http://validator.w3.org/check?uri=https://nowsher.github.io">
+                    <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator" />
+                </a>
+            </div>
+
+            <div>
+                <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://nowsher.github.io">
+                    <img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="css validator" />
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
