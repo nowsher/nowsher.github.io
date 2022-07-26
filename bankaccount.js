@@ -90,6 +90,7 @@ function debitClick() {
 
 function closeWindow() {
     document.getElementById("overlay").style.display = "none";
+    document.getElementById("amount").value = "";
 }
 
 function changeValue() {
@@ -113,7 +114,7 @@ function save() {
             }
             else
                 if (operationType == "Debit amount") {
-                    if (parseInt(element.getDeposit()) > amount) {
+                    if (parseInt(element.getDeposit()) >= amount) {
                         element.updateDeposit(-amount);
                         changed = true;
                     }
@@ -121,11 +122,10 @@ function save() {
                         alert("Overdraft not allowed.");
                     }
                 }
-                
+
             if (changed) {
                 showAccountList();
-                closeWindow();
-                document.getElementById("amount").value = "";
+                closeWindow();                
             }
             break;
         }
