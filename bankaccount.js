@@ -16,7 +16,6 @@ class Account {
     constructor() {
         this.#name = "";
         this.#deposit = "";
-        // Account.#accountInfoList1 = [];
     }
 
     createNewAccount() {
