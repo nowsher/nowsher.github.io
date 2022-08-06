@@ -1,0 +1,28 @@
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 12pt;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 0px;
+    line-height: 1;
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+}
+
+#explanation {
+    /* float: left; */
+    display: block;
+    width: 40%;
+    padding: 5px;
+}
+
+#image-area {
+    /* float: right; */
+    width: 60%;
+    text-align: center;
+}
+
