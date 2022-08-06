@@ -7,12 +7,15 @@ $(document).ready(function () {
 
 function fetchAPOD() {
 
-    //const postsPromise = fetch('https://api.nasa.gov/planetary/apod?api_key=Xxvggsdti75tDsRskePv3JuA4w6f5oFDdqDv8dQF&date=' + $("#date").val()); // return Promise
-    const myPromise = customPromise();
-    myPromise
-        //.then(thenResponsePromise)
+    const postsPromise = fetch('https://api.nasa.gov/planetary/apod?api_key=Xxvggsdti75tDsRskePv3JuA4w6f5oFDdqDv8dQF&date=' + $("#date").val()); // return Promise
+    const myPromise = postsPromise;//customPromise();
+    myPromise.then(thenResponsePromise)
         .then(then2Response)
         .catch(catchError);
+
+        // const myPromise = customPromise();
+        // myPromise.then(then2Response)
+        //     .catch(catchError);
 }
 
 function customPromise() {
